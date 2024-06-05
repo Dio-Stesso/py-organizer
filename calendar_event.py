@@ -1,6 +1,7 @@
 from event import Event
 from datetime import datetime, timedelta
 
+
 class CalendarEvent(Event):
     def __init__(self, title, start_date, end_date, category, periodicity=None):
         super().__init__(title, start_date, end_date, category)

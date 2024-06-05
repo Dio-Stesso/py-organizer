@@ -27,7 +27,7 @@ class TestOrganizer(unittest.TestCase):
 
     def test_get_upcoming_events(self):
         upcoming_events = self.organizer.get_upcoming_events(days=10)
-        print(f"Upcoming events: {upcoming_events}")  # Debugging statement
+        print(f"Upcoming events: {upcoming_events}")
         self.assertIn(self.event1, upcoming_events)
         self.assertIn(self.event2, upcoming_events)
 

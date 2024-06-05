@@ -15,4 +15,5 @@ class OrganizerEvent(CalendarEvent):
         return [reminder for reminder in self.reminders if reminder > now]
 
     def __repr__(self):
-        return f"OrganizerEvent(title={self.title}, start_date={self.start_date}, end_date={self.end_date}, category={self.category}, periodicity={self.periodicity}, reminders={self.reminders})"
+        return (f"OrganizerEvent(title={self.title}, start_date={self.start_date}, end_date={self.end_date}, "
+                f"category={self.category}, periodicity={self.periodicity}, reminders={self.reminders})")

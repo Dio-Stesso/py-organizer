@@ -19,9 +19,9 @@ class Organizer:
         upcoming_events = []
         now = datetime.now()
         end_date = now + timedelta(days=days)
-        print(f"Finding events between {now} and {end_date}")  # Debugging statement
+        print(f"Finding events between {now} and {end_date}")
         for calendar in self.calendars.values():
             events = calendar.find_events_by_date_range(now, end_date)
-            print(f"Events in calendar: {events}")  # Debugging statement
+            print(f"Events in calendar: {events}")
             upcoming_events.extend(events)
         return sorted(upcoming_events, key=lambda event: event.start_date)
